@@ -1,0 +1,28 @@
+# Rafah Barber Studio
+
+## About
+Premium barbershop located in [TODO: CITY], Romania. Specializing in men's cuts, beard grooming, and hair treatments.
+
+## Services
+Tuns Bărbat / Men's Cut — RON
+Tuns + Barbă / Cut + Beard — RON
+Barbă / Beard Trim — RON
+Tuns Copii / Kids Cut — RON
+Tratament / Treatment — RON
+
+## Location
+[TODO: FULL ADDRESS]
+
+## Hours
+Luni - Vineri: 09:00 - 20:00
+Sâmbătă: 09:00 - 15:00
+Duminică: Închis
+
+## Contact
+Phone: [TODO: PHONE]
+WhatsApp: [TODO: WHATSAPP]
+
+## Links
+Website: https://[TODO: DOMAIN]
+Instagram: https://www.instagram.com/rafah_barberstudio
+TikTok: https://www.tiktok.com/@[TODO: TIKTOK_HANDLE]
