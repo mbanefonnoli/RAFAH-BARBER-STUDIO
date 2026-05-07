@@ -1,7 +1,7 @@
 "use client";
 
 import React, { useEffect } from "react";
-import Image from "next/image";
+
 import { useLanguage } from "@/context/LanguageContext";
 
 const Gallery = () => {
@@ -26,10 +26,10 @@ const Gallery = () => {
   }, []);
 
   const slots = [
-    { span: "col-span-2 md:col-span-2 aspect-[4/5]", img: "/gallery/ig/post_1.jpg" },
-    { span: "col-span-2 md:col-span-2 aspect-[4/5]", img: "/gallery/ig/post_2.jpg" },
-    { span: "col-span-2 md:col-span-1 aspect-square", img: "/gallery/ig/post_3.jpg" },
-    { span: "col-span-2 md:col-span-3 aspect-[21/9]", img: "/gallery/ig/post_4.jpg" },
+    { span: "col-span-1 aspect-[3/4]", img: "/gallery/ig/post_1.jpg" },
+    { span: "col-span-1 aspect-[3/4]", img: "/gallery/ig/post_2.jpg" },
+    { span: "col-span-1 aspect-[3/4]", img: "/gallery/ig/post_3.jpg" },
+    { span: "col-span-1 aspect-[3/4]", img: "/gallery/ig/post_4.jpg" },
   ];
 
   return (
@@ -39,20 +39,18 @@ const Gallery = () => {
           {t("galleryTitle")}
         </h2>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 sm:gap-4">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
           {slots.map((slot, index) => (
             <div
               key={index}
               className={`reveal relative overflow-hidden bg-brand-surface group ${slot.span}`}
               style={{ transitionDelay: `${index * 100}ms` }}
             >
-              <Image
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
                 src={slot.img}
                 alt={`Gallery ${index + 1}`}
-                fill
-                className="object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-500"
-                sizes="(max-width: 768px) 50vw, 25vw"
-                priority={index === 0}
+                className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-500"
               />
               <div className="absolute inset-0 bg-brand-bg/20 group-hover:bg-transparent transition-colors duration-300"></div>
               <div className="absolute bottom-4 left-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
