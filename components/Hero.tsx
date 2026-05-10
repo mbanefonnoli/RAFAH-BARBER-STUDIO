@@ -1,11 +1,10 @@
 "use client";
 
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import { useLanguage } from "@/context/LanguageContext";
 
 const Hero = () => {
   const { t } = useLanguage();
-  const observerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const observer = new IntersectionObserver(
