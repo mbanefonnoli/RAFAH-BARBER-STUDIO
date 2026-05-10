@@ -27,6 +27,17 @@ const Hero = () => {
 
   return (
     <section className="relative h-screen w-full flex items-center justify-center grain overflow-hidden bg-brand-bg">
+      {/* Shop background image */}
+      <div className="absolute inset-0 z-0">
+        {/* eslint-disable-next-line @next/next/no-img-element */}
+        <img
+          src="/shop.jpg"
+          alt="Rafah Barber Studio"
+          className="w-full h-full object-cover opacity-30"
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-brand-bg via-brand-bg/60 to-brand-bg/40"></div>
+      </div>
+
       <div className="container mx-auto px-6 relative z-20 flex flex-col items-center text-center">
         <span className="reveal text-[10px] sm:text-xs uppercase tracking-[0.5em] font-body text-brand-accent mb-6 sm:mb-8">
           {t("heroSubtitle")}
@@ -45,7 +56,7 @@ const Hero = () => {
         </div>
 
         <a
-          href="https://wa.me/[TODO: WHATSAPP_NUMBER]?text=Bună%2C%20vreau%20să%20fac%20o%20programare"
+          href="https://wa.me/40723430698?text=Bună%2C%20vreau%20să%20fac%20o%20programare"
           className="reveal delay-300 px-8 sm:px-12 py-3 sm:py-4 border border-brand-accent text-brand-accent uppercase text-[10px] sm:text-xs tracking-[0.3em] font-body 
             hover:bg-brand-accent hover:text-brand-bg transition-all duration-300 rounded-[2px] mt-4"
         >

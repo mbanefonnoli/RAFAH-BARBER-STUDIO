@@ -37,7 +37,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link href="/" className="relative w-32 h-12">
           <Image
-            src="/logo.svg"
+            src="/logo.png"
             alt="Rafah Barber Studio"
             fill
             className="object-contain object-left"

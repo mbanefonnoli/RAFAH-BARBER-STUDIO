@@ -1,7 +1,7 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
+
 import { useLanguage } from "@/context/LanguageContext";
 
 const About = () => {
@@ -27,12 +27,11 @@ const About = () => {
           </div>
 
           <div className="reveal md:delay-200 relative aspect-[4/5] bg-brand-surface border border-brand-accent/10">
-            <Image
-              src="/about.jpg"
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/shop.jpg"
               alt="Rafah Barber Studio Interior"
-              fill
-              className="object-cover opacity-80"
-              sizes="(max-width: 768px) 100vw, 50vw"
+              className="absolute inset-0 w-full h-full object-cover opacity-80"
             />
             <div className="absolute inset-4 sm:inset-8 border border-white/5 pointer-events-none flex items-center justify-center">
                 <span className="text-[10px] uppercase tracking-[0.4em] font-body text-brand-accent/20 rotate-90 origin-center whitespace-nowrap">ESTABLISHED IN ROMANIA</span>
